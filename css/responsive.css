@@ -1,1 +1,115 @@
+/* ==========================================================================
+   Aipudio Web Solutions - Responsive Layouts & Breakpoints
+   ========================================================================== */
 
+/* أجهزة اللابتوب والشاشات المتوسطة (Under 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --space-section: 4.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+}
+
+/* الأجهزة اللوحية والموبايل (Under 768px) */
+@media (max-width: 768px) {
+  :root {
+    --space-section: 3.5rem;
+  }
+
+  .nav-container {
+    height: 70px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* تحويل شريط التنقل إلى قائمة شاشة كاملة للموبايل */
+  .site-nav {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: var(--color-bg-primary);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-xl);
+    gap: var(--space-lg);
+    border-bottom: 1px solid var(--border-color);
+    transform: translateX(100%);
+    transition: transform var(--transition-smooth);
+  }
+
+  .site-nav.open {
+    transform: translateX(0);
+  }
+
+  .nav-link {
+    font-size: 1.15rem;
+    width: 100%;
+    padding-block: var(--space-xs);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .trust-indicators {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: center;
+  }
+
+  /* بطاقات الأسعار في الموبايل */
+  .pricing-card {
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .price-current {
+    font-size: 2.1rem;
+  }
+
+  /* زر الواتساب العائم على الشاشات الصغيرة */
+  .floating-whatsapp span {
+    display: none; /* إخفاء النص والإبقاء على الأيقونة فقط لتوفير المساحة */
+  }
+
+  .floating-whatsapp {
+    padding: 0.85rem;
+    border-radius: 50%;
+    bottom: 20px;
+    left: 20px;
+  }
+}
+
+/* الهواتف الصغيرة جداً (Under 480px) */
+@media (max-width: 480px) {
+  .hero-badges-wrapper {
+    flex-direction: column;
+  }
+
+  .container {
+    padding-inline: var(--space-md);
+  }
+}
