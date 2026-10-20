@@ -1,1 +1,407 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>معرض أعمالنا ونماذج المشاريع المنفذة | Aipudio Web Solutions</title>
+  <meta name="description" content="تصفح أحدث أعمال ومشاريع شركة Aipudio في تصميم المواقع التعريفية، المتاجر الإلكترونية، وصفحات حجز العيادات والمراكز الخدمية." />
+  <link rel="canonical" href="https://aipudio.online/portfolio" />
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="معرض أعمالنا ونماذج المشاريع | Aipudio" />
+  <meta property="og:description" content="شاهد نماذج حقيقية للمتاجر الإلكترونية والمواقع التعريفية وصفحات الحجز المنفذة بواسطة فريق Aipudio." />
+  <meta property="og:url" content="https://aipudio.online/portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://aipudio.online/assets/images/og/og-default.jpg" />
+
+  <!-- PWA Manifest & Favicon -->
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" type="image/png" href="/assets/icons/icon-192.png" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/variables.css" />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/pages.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+</head>
+<body>
+
+  <!-- ==================== Header ==================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="/" class="brand-logo" aria-label="Aipudio الصفحة الرئيسية">
+        Aipudio<span>.</span>
+      </a>
+
+      <nav class="site-nav" aria-label="التنقل الرئيسي">
+        <a href="/" class="nav-link">الرئيسية</a>
+        <a href="/services" class="nav-link">الخدمات</a>
+        <a href="/pricing" class="nav-link">الباقات والأسعار</a>
+        <a href="/portfolio" class="nav-link active" aria-current="page">أعمالنا</a>
+        <a href="/how-it-works" class="nav-link">طريقة العمل</a>
+        <a href="/faq" class="nav-link">الأسئلة الشائعة</a>
+        <a href="/contact" class="nav-link">تواصل معنا</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/start-project" class="btn btn-primary btn-sm">ابدأ مشروعك</a>
+        <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false">
+          <svg width="26" height="26" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== Page Hero ==================== -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="مسار الصفحة">
+        <a href="/">الرئيسية</a>
+        <span>/</span>
+        <span>معرض الأعمال</span>
+      </nav>
+
+      <div class="hero-badges-wrapper">
+        <span class="badge badge-launch">نماذج حقيقية منفذة بمعايير Aipudio</span>
+        <span class="badge badge-slots">إجمالي النماذج المعروضة: <strong data-portfolio-count>5</strong> مشاريع</span>
+      </div>
+
+      <h1 class="section-title">أعمال صُممت لتحقيق نتائج ملموسة</h1>
+      <p class="section-subtitle" style="max-width: 740px; margin-inline: auto;">
+        استعرض نماذج مختارة من المشاريع التي قمنا بتطويرها في قطاعات التجارة الإلكترونية، العيادات الطبية، والشركات الخدمية. يمكنك تصفية الأعمال حسب نوع الباقة لاختيار التصميم الأقرب لنشاطك.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== Portfolio Filter & Grid Section ==================== -->
+  <main class="section glow-bg">
+    <div class="container">
+
+      <!-- أزرار الفلترة التفاعلية المتوافقة مع js/portfolio.js -->
+      <div class="portfolio-filters" role="group" aria-label="تصفية معرض الأعمال حسب نوع الباقة">
+        <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">
+          جميع المشاريع (5)
+        </button>
+        <button type="button" class="filter-btn" data-filter="business-website" aria-pressed="false">
+          مواقع تعريفية للشركات (2)
+        </button>
+        <button type="button" class="filter-btn" data-filter="ecommerce" aria-pressed="false">
+          متاجر إلكترونية (2)
+        </button>
+        <button type="button" class="filter-btn" data-filter="booking" aria-pressed="false">
+          صفحات حجز وعيادات (1)
+        </button>
+      </div>
+
+      <!-- شبكة المشاريع الخمسة -->
+      <div class="grid grid-3">
+
+        <!-- 1. مشروع Laky Store (متجر إلكتروني) -->
+        <article class="portfolio-card" data-category="ecommerce">
+          <a href="/portfolio/laky-store" class="portfolio-thumb" aria-label="معاينة مشروع متجر لاكي Laky Store">
+            <img
+              src="/assets/images/portfolio/laky-store-cover.jpg"
+              alt="واجهة متجر لاكي الإلكتروني Laky Store"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #1e293b 0%, #0f172a 100%)';"
+            />
+          </a>
+          <div class="portfolio-body">
+            <div class="portfolio-category">باقة المتجر الإلكتروني • E-commerce</div>
+            <h2 class="portfolio-title">
+              <a href="/portfolio/laky-store">متجر لاكي (Laky Store)</a>
+            </h2>
+            <p class="portfolio-desc">
+              واجهة تسوق عصرية سريعة الاستجابة لعرض المنتجات وتصنيفاتها مع تجربة طلب مبسطة ومباشرة ترفع معدل إتمام الشراء عبر الموبايل.
+            </p>
+            <div class="flex gap-xs" style="flex-wrap: wrap; margin-bottom: var(--space-md);">
+              <span class="badge badge-tag" style="font-size: 0.75rem;">كتالوج منتجات</span>
+              <span class="badge badge-tag" style="font-size: 0.75rem;">متجاوب للموبايل</span>
+              <span class="badge badge-tag" style="font-size: 0.75rem;">طلب سريع</span>
+            </div>
+            <div class="portfolio-footer">
+              <a href="/portfolio/laky-store" class="text-primary" style="font-weight: 700;">
+                دراسة الحالة والتفاصيل ←
+              </a>
+              <a href="/start-project?package=ecommerce" class="btn btn-secondary btn-sm" data-track-package="ecommerce">
+                اطلب متجراً مماثلاً
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. مشروع Snabel Hijab (متجر إلكتروني) -->
+        <article class="portfolio-card" data-category="ecommerce">
+          <a href="/portfolio/snabel-hijab" class="portfolio-thumb" aria-label="معاينة مشروع متجر سنابل حجاب Snabel Hijab">
+            <img
+              src="/assets/images/portfolio/snabel-hijab-cover.jpg"
+              alt="واجهة متجر سنابل حجاب Snabel Hijab للأزياء"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #312e81 0%, #0f172a 100%)';"
+            />
+          </a>
+          <div class="portfolio-body">
+            <div class="portfolio-category">باقة المتجر الإلكتروني • Fashion Brand</div>
+            <h2 class="portfolio-title">
+              <a href="/portfolio/snabel-hijab">براند سنابل حجاب (Snabel Hijab)</a>
+            </h2>
+            <p class="portfolio-desc">
+              تصميم متجر أنيق مخصص لبراند أزياء محتشم يبرز جودة الصور، الألوان المتاحة، والمقاسات مع ربط فوري لطلبات العملاء عبر واتساب.
+            </p>
+            <div class="flex gap-xs" style="flex-wrap: wrap; margin-bottom: var(--space-md);">
+              <span class="badge badge-tag" style="font-size: 0.75rem;">براند أزياء</span>
+              <span class="badge badge-tag" style="font-size: 0.75rem;">عرض تشكيلات</span>
+              <span class="badge badge-tag" style="font-size: 0.75rem;">ربط واتساب</span>
+            </div>
+            <div class="portfolio-footer">
+              <a href="/portfolio/snabel-hijab" class="text-primary" style="font-weight: 700;">
+                دراسة الحالة والتفاصيل ←
+              </a>
+              <a href="/start-project?package=ecommerce" class="btn btn-secondary btn-sm" data-track-package="ecommerce">
+                اطلب متجراً مماثلاً
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. مشروع Perfection Dental (صفحة حجز وعيادات) -->
+        <article class="portfolio-card" data-category="booking">
+          <a href="/portfolio/perfection-dental" class="portfolio-thumb" aria-label="معاينة مشروع عيادة بيرفكشن لطب الأسنان Perfection Dental">
+            <img
+              src="/assets/images/portfolio/perfection-dental-cover.jpg"
+              alt="صفحة حجز عيادة بيرفكشن لطب الأسنان Perfection Dental"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #065f46 0%, #0f172a 100%)';"
+            />
+          </a>
+          <div class="portfolio-body">
+            <div class="portfolio-category">باقة صفحة الحجز • Medical Clinic</div>
+            <h2 class="portfolio-title">
+              <a href="/portfolio/perfection-dental">عيادة بيرفكشن للأسنان (Perfection Dental)</a>
+            </h2>
+            <p class="portfolio-desc">
+              صفحة حجز متكاملة لعيادة طب وتجميل الأسنان تستعرض الخدمات العلاجية، حالات قبل وبعد، ونموذج حجز موعد مباشر لزيادة حجوزات المرضى.
+            </p>
+            <div class="flex gap-xs" style="flex-wrap: wrap; margin-bottom: var(--space-md);">
+              <span class="badge badge-tag" style="font-size: 0.75rem;">حجز مواعيد</span>
+              <span class="badge badge-tag" style="font-size: 0.75rem;">عرض خدمات طبية</span>
+              <span class="badge badge-tag" style="font-size: 0.75rem;">تحويل عالي</span>
+            </div>
+            <div class="portfolio-footer">
+              <a href="/portfolio/perfection-dental" class="text-primary" style="font-weight: 700;">
+                دراسة الحالة والتفاصيل ←
+              </a>
+              <a href="/start-project?package=booking" class="btn btn-secondary btn-sm" data-track-package="booking">
+                اطلب صفحة حجز
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. مشروع Charisma Advertising (موقع تعريفي) -->
+        <article class="portfolio-card" data-category="business-website">
+          <a href="/portfolio/charisma-advertising" class="portfolio-thumb" aria-label="معاينة مشروع شركة كاريزما للدعاية والإعلان">
+            <img
+              src="/assets/images/portfolio/charisma-advertising-cover.jpg"
+              alt="الموقع التعريفي لشركة كاريزما للدعاية والإعلان Charisma Advertising"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #1d4ed8 0%, #0f172a 100%)';"
+            />
+          </a>
+          <div class="portfolio-body">
+            <div class="portfolio-category">باقة الموقع التعريفي • Agency Website</div>
+            <h2 class="portfolio-title">
+              <a href="/portfolio/charisma-advertising">كاريزما للدعاية والإعلان (Charisma)</a>
+            </h2>
+            <p class="portfolio-desc">
+              موقع تعريفي احترافي لوكالة دعاية وإعلان يعكس الهوية الإبداعية للشركة، ويستعرض خدمات الطباعة والتسويق وسابقة الأعمال مع قنوات تواصل مباشرة.
+            </p>
+            <div class="flex gap-xs" style="flex-wrap: wrap; margin-bottom: var(--space-md);">
+              <span class="badge badge-tag" style="font-size: 0.75rem;">هوية شركات</span>
+              <span class="badge badge-tag" style="font-size: 0.75rem;">عرض خدمات</span>
+              <span class="badge badge-tag" style="font-size: 0.75rem;">سابقة أعمال</span>
+            </div>
+            <div class="portfolio-footer">
+              <a href="/portfolio/charisma-advertising" class="text-primary" style="font-weight: 700;">
+                دراسة الحالة والتفاصيل ←
+              </a>
+              <a href="/start-project?package=business-website" class="btn btn-secondary btn-sm" data-track-package="business-website">
+                اطلب موقعاً تعريفياً
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. مشروع GLSC SA (موقع تعريفي للشركات) -->
+        <article class="portfolio-card" data-category="business-website">
+          <a href="/portfolio/glsc-sa" class="portfolio-thumb" aria-label="معاينة مشروع شركة GLSC السعودية">
+            <img
+              src="/assets/images/portfolio/glsc-sa-cover.jpg"
+              alt="الموقع الرسمي لشركة GLSC للخدمات اللوجستية والأعمال في السعودية"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #0369a1 0%, #0f172a 100%)';"
+            />
+          </a>
+          <div class="portfolio-body">
+            <div class="portfolio-category">باقة الموقع التعريفي • Corporate B2B</div>
+            <h2 class="portfolio-title">
+              <a href="/portfolio/glsc-sa">شركة GLSC السعودية (GLSC SA)</a>
+            </h2>
+            <p class="portfolio-desc">
+              واجهة رقمية رسمية لشركة أعمال وخدمات لوجستية بالسوق السعودي، مصممة لبناء الثقة المؤسسية مع الشركات وعرض القطاعات المخدومة وطلبات عروض الأسعار.
+            </p>
+            <div class="flex gap-xs" style="flex-wrap: wrap; margin-bottom: var(--space-md);">
+              <span class="badge badge-tag" style="font-size: 0.75rem;">قطاع الأعمال B2B</span>
+              <span class="badge badge-tag" style="font-size: 0.75rem;">السوق السعودي</span>
+              <span class="badge badge-tag" style="font-size: 0.75rem;">تصميم مؤسسي</span>
+            </div>
+            <div class="portfolio-footer">
+              <a href="/portfolio/glsc-sa" class="text-primary" style="font-weight: 700;">
+                دراسة الحالة والتفاصيل ←
+              </a>
+              <a href="/start-project?package=business-website" class="btn btn-secondary btn-sm" data-track-package="business-website">
+                اطلب موقعاً تعريفياً
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== Scope & Quality Standards Section ==================== -->
+  <section class="section section-secondary">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-tag">معايير التنفيذ في كل مشروع</span>
+        <h2 class="section-title">لماذا تنجح المواقع التي تطورها Aipudio؟</h2>
+        <p class="section-subtitle">
+          سواء اخترت باقة الموقع التعريفي أو المتجر أو صفحة الحجز، نلتزم بأربعة معايير أساسية في كل مشروع نسلمه:
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3 style="font-size: 1.15rem; margin-bottom: var(--space-xs);">أولوية شاشة الموبايل</h3>
+          <p style="font-size: 0.9rem;">
+            أكثر من 85% من زوارك يأتون عبر الهاتف؛ لذلك نصمم التجربة لتكون سلسة وواضحة تماماً على جميع مقاسات الهواتف.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3 style="font-size: 1.15rem; margin-bottom: var(--space-xs);">سرعة تحميل فائقة</h3>
+          <p style="font-size: 0.9rem;">
+            نكتب أكواداً نظيفة خالية من الإضافات الثقيلة لضمان فتح صفحات موقعك في أجزاء من الثانية وعدم خسارة أي عميل محتمل.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3 style="font-size: 1.15rem; margin-bottom: var(--space-xs);">توجيه مباشر نحو البيع</h3>
+          <p style="font-size: 0.9rem;">
+            توزيع أزرار الواتساب ونماذج الطلب والحجز في أماكن مدروسة تسهّل على الزائر التواصل معك فوراً دون تشتيت.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <h3 style="font-size: 1.15rem; margin-bottom: var(--space-xs);">نطاق واضح وتسليم منضبط</h3>
+          <p style="font-size: 0.9rem;">
+            مواصفات مكتوبة لكل باقة مع جولتي تعديلات مجمعة وفحص شامل لكافة الروابط قبل التسليم النهائي.
+          </p>
+        </div>
+      </div>
+
+      <!-- بطاقة دعوة لاتخاذ إجراء (CTA) -->
+      <div class="form-card text-center" style="margin-top: var(--space-3xl); background: linear-gradient(135deg, rgba(37, 99, 235, 0.16) 0%, var(--color-bg-card) 100%); border-color: rgba(37, 99, 235, 0.4);">
+        <div class="badge badge-launch" style="margin-bottom: var(--space-sm);">عرض الإطلاق — 2,500 ج.م بدلاً من 4,000 ج.م</div>
+        <h2 style="font-size: 1.75rem; margin-bottom: var(--space-xs);">اجعل مشروعك القادم ضمن قصص نجاحنا</h2>
+        <p style="max-width: 600px; margin: 0 auto var(--space-lg);">
+          اختر الباقة المناسبة لنشاطك واحجز مقعدك ضمن أول 20 مشروعاً بنفس الجودة الاحترافية التي شاهدتها في أعمالنا.
+        </p>
+        <div class="hero-cta-group" style="margin-top: 0;">
+          <a href="/start-project" class="btn btn-primary">ابدأ مشروعك الآن — 2,500 ج.م</a>
+          <a href="/pricing" class="btn btn-secondary">مقارنة الباقات الثلاث</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand-logo">Aipudio<span>.</span></a>
+          <p>
+            شركة متخصصة في تطوير وتصميم المواقع التعريفية والمتاجر الإلكترونية وصفحات الحجز بمعايير سرعة وتجربة مستخدم قياسية.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-title">الحلول والباقات</h3>
+          <ul class="footer-links">
+            <li><a href="/services/business-website" class="footer-link">باقة الموقع التعريفي</a></li>
+            <li><a href="/services/ecommerce" class="footer-link">باقة المتجر الإلكتروني</a></li>
+            <li><a href="/services/booking" class="footer-link">باقة صفحة الحجز</a></li>
+            <li><a href="/pricing" class="footer-link">مقارنة الباقات والأسعار</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">روابط سريعة</h3>
+          <ul class="footer-links">
+            <li><a href="/portfolio" class="footer-link">معرض الأعمال</a></li>
+            <li><a href="/how-it-works" class="footer-link">طريقة العمل</a></li>
+            <li><a href="/about" class="footer-link">عن Aipudio</a></li>
+            <li><a href="/faq" class="footer-link">الأسئلة الشائعة</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">القانونية والتواصل</h3>
+          <ul class="footer-links">
+            <li><a href="/terms" class="footer-link">شروط الخدمة ونطاق العمل</a></li>
+            <li><a href="/privacy" class="footer-link">سياسة الخصوصية</a></li>
+            <li><a href="/contact" class="footer-link">تواصل معنا</a></li>
+            <li><a href="/start-project" class="footer-link" style="color: var(--color-accent-cyan); font-weight: 700;">ابدأ مشروعك (2,000 ج.م)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-current-year>2026</span> Aipudio Web Solutions. جميع الحقوق محفوظة.</p>
+        <p>صُمم وطُور بواسطة فريق Aipudio</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر الواتساب العائم -->
+  <a
+    href="#"
+    class="floating-whatsapp"
+    data-whatsapp-quick
+    data-whatsapp-msg="مرحباً فريق Aipudio، كنت أتصفح معرض أعمالكم وأرغب في الاستفسار عن تنفيذ مشروع مماثل ضمن عرض الـ 2,500 ج.م."
+    aria-label="تواصل معنا عبر واتساب"
+  >
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"/>
+    </svg>
+    <span>استفسار سريع</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="/js/main.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/portfolio.js"></script>
+  <script src="/js/analytics.js"></script>
+</body>
+</html>
