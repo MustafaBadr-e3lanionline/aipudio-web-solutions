@@ -1,1 +1,64 @@
+:root {
+  /* نظام الألوان الأساسي */
+  --color-bg-primary: #0a0e17;
+  --color-bg-secondary: #111827;
+  --color-bg-card: #182234;
+  --color-bg-card-hover: #1f2d45;
+  --color-bg-surface: #0f172a;
+  
+  /* ألوان التمييز والتفاعل (Accents & Conversion) */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-light: rgba(37, 99, 235, 0.15);
+  
+  --color-accent-cyan: #06b6d4;
+  --color-accent-emerald: #10b981;
+  --color-accent-emerald-light: rgba(16, 185, 129, 0.15);
+  --color-accent-amber: #f59e0b;
+  --color-accent-amber-light: rgba(245, 158, 11, 0.15);
+  
+  /* ألوان النصوص */
+  --color-text-main: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --color-text-dim: #64748b;
+  --color-text-inverse: #0f172a;
 
+  /* الحدود والفواصل */
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-color-hover: rgba(37, 99, 235, 0.4);
+  --border-glow: 0 0 20px rgba(37, 99, 235, 0.25);
+
+  /* الخطوط (Typography) */
+  --font-family-arabic: 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-display: 'Alexandria', 'Cairo', sans-serif;
+
+  /* المسافات (Spacing System) */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-section: 6rem;
+
+  /* الحاويات والحواف */
+  --container-max-width: 1200px;
+  --container-narrow: 900px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-full: 9999px;
+
+  /* الظلال والتأثيرات */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+
+  /* الانتقالات */
+  --transition-fast: 0.18s ease;
+  --transition-normal: 0.28s ease;
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
