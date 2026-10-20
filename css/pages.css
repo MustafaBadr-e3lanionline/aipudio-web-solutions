@@ -127,6 +127,17 @@
   font-size: 0.875rem;
 }
 
+/* تنسيق أزرار زيارة المواقع الحية في معرض الأعمال */
+.portfolio-footer .btn-primary {
+  background: linear-gradient(135deg, var(--color-accent-cyan) 0%, var(--color-primary) 100%);
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.portfolio-footer .btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
 /* 3. خطوات العمل (How It Works Timeline) */
 .process-grid {
   display: grid;
