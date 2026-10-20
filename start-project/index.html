@@ -1,1 +1,356 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ابدأ مشروعك الآن | احجز مقعدك في عرض الإطلاق 2,500 ج.م — Aipudio</title>
+  <meta name="description" content="احجز موقعك التعريفي أو متجرك الإلكتروني أو صفحة الحجز بسعر عرض الإطلاق 2,500 ج.م بدلاً من 4,000 ج.م لأول 20 مشروعاً. حدد باقتك وابدأ التنفيذ مع Aipudio." />
+  <link rel="canonical" href="https://aipudio.online/start-project" />
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="ابدأ مشروعك الآن — عرض الإطلاق 2,500 ج.م | Aipudio" />
+  <meta property="og:description" content="نطاق عمل واضح، تسليم احترافي، وسعر موحد 2,500 ج.م لأول 20 مشروعاً." />
+  <meta property="og:url" content="https://aipudio.online/start-project" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://aipudio.online/assets/images/og/og-default.jpg" />
+
+  <!-- PWA Manifest & Favicon -->
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" type="image/png" href="/assets/icons/icon-192.png" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/variables.css" />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/pages.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+</head>
+<body>
+
+  <!-- ==================== Header ==================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="/" class="brand-logo" aria-label="Aipudio الصفحة الرئيسية">
+        Aipudio<span>.</span>
+      </a>
+
+      <nav class="site-nav" aria-label="التنقل الرئيسي">
+        <a href="/" class="nav-link">الرئيسية</a>
+        <a href="/services" class="nav-link">الخدمات</a>
+        <a href="/pricing" class="nav-link">الباقات والأسعار</a>
+        <a href="/portfolio" class="nav-link">أعمالنا</a>
+        <a href="/how-it-works" class="nav-link">طريقة العمل</a>
+        <a href="/faq" class="nav-link">الأسئلة الشائعة</a>
+        <a href="/contact" class="nav-link">تواصل معنا</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="/start-project" class="btn btn-primary btn-sm">ابدأ مشروعك</a>
+        <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false">
+          <svg width="26" height="26" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== Page Hero ==================== -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="مسار الصفحة">
+        <a href="/">الرئيسية</a>
+        <span>/</span>
+        <span>ابدأ مشروعك</span>
+      </nav>
+
+      <div class="hero-badges-wrapper">
+        <span class="badge badge-launch">🔥 عرض الإطلاق: 2,500 ج.م بدلاً من 4,000 ج.م</span>
+        <span class="badge badge-slots">متبقي <strong data-remaining-slots>7</strong> مقاعد من أصل 20 مشروعاً</span>
+      </div>
+
+      <h1 class="section-title">احجز باقتك وحدد نطاق مشروعك بدقة</h1>
+      <p class="section-subtitle" style="max-width: 680px; margin-inline: auto;">
+        املاً النموذج التالي في أقل من دقيقة. سيقوم النظام بتجهيز ملخص طلبك وتحويلك مباشرة إلى واتساب فريق التنفيذ لمراجعة التفاصيل وتأكيد الحجز.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== Start Project Form & Scope Sidebar ==================== -->
+  <main class="section">
+    <div class="container">
+      <div class="start-project-layout">
+
+        <!-- القسم الأيمن: نموذج طلب المشروع -->
+        <div class="form-card">
+          <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">بيانات طلب المشروع</h2>
+          <p style="font-size: 0.95rem; margin-bottom: 1.75rem;">
+            جميع الحقول التي تحمل علامة (<span style="color: #ef4444;">*</span>) مطلوبة لتجهيز ملف مشروعك.
+          </p>
+
+          <form id="startProjectForm" novalidate>
+            <!-- 1. البيانات الشخصية والنشاط -->
+            <div class="grid grid-2" style="gap: var(--space-md);">
+              <div class="form-group">
+                <label for="clientName" class="form-label">الاسم الكامل <span style="color: #ef4444;">*</span></label>
+                <input
+                  type="text"
+                  id="clientName"
+                  name="clientName"
+                  class="form-control"
+                  placeholder="مثال: أحمد محمود"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="clientPhone" class="form-label">رقم الموبايل / واتساب <span style="color: #ef4444;">*</span></label>
+                <input
+                  type="tel"
+                  id="clientPhone"
+                  name="clientPhone"
+                  class="form-control"
+                  placeholder="مثال: 01012345678"
+                  dir="ltr"
+                  style="text-align: right;"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="businessName" class="form-label">اسم الشركة أو النشاط التجاري</label>
+              <input
+                type="text"
+                id="businessName"
+                name="businessName"
+                class="form-control"
+                placeholder="مثال: عيادة بيرفكشن / متجر لاكي / شركة كاريزما"
+              />
+            </div>
+
+            <!-- 2. اختيار الباقة الأساسية -->
+            <div class="form-group">
+              <label for="packageSelect" class="form-label">اختر الباقة المطلوبة ضمن عرض الـ 2,500 ج.م <span style="color: #ef4444;">*</span></label>
+              <select id="packageSelect" name="package" class="form-control" required>
+                <option value="" disabled selected>— اختر نوع الحل المناسب لنشاطك —</option>
+                <option value="business-website">1. باقة الموقع التعريفي (Business Website Starter) — 2,500 ج.م</option>
+                <option value="ecommerce">2. باقة المتجر الإلكتروني (E-commerce Starter) — 2,500 ج.م</option>
+                <option value="booking">3. باقة صفحة الحجز (Booking Page Starter) — 2,500 ج.م</option>
+              </select>
+
+              <!-- صندوق المعاينة اللحظية للنطاق (يتم تحديثه تلقائياً عبر forms.js) -->
+              <div id="scopePreviewBox" aria-live="polite">
+                <div style="padding: 0.9rem 1rem; background: rgba(255, 255, 255, 0.03); border: 1px dashed var(--border-color); border-radius: 10px; margin-top: 0.5rem; font-size: 0.875rem; color: var(--color-text-muted);">
+                  💡 اختر الباقة أعلاه لعرض ملخص المواصفات المشمولة في السعر الأساسي.
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. جاهزية المحتوى والصور -->
+            <div class="form-group">
+              <label for="contentReady" class="form-label">حالة المحتوى النصي والصور الخاصة بمشروعك</label>
+              <select id="contentReady" name="contentReady" class="form-control">
+                <option value="المحتوى والصور جاهزة للتسليم الفوري">المحتوى والصور جاهزة للتسليم الفوري</option>
+                <option value="أحتاج بضعة أيام لتجهيز المحتوى والصور">أحتاج بضعة أيام لتجهيز المحتوى والصور</option>
+                <option value="أرغب في طلب خدمة كتابة المحتوى التسويقي كإضافة منفصلة">أرغب في طلب كتابة المحتوى التسويقي (تُسعّر كإضافة منفصلة)</option>
+              </select>
+            </div>
+
+            <!-- 4. الإضافات الاختيارية (تُسعّر منفصلاً خارج الـ 2,500 ج.م) -->
+            <div class="form-group" style="margin-top: var(--space-lg);">
+              <label class="form-label">
+                خدمات إضافية اختيارية <span class="badge badge-tag" style="font-size: 0.75rem; margin-inline-start: 0.4rem;">تُسعّر منفصلاً حسب الطلب</span>
+              </label>
+              <p style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                الباقة الأساسية تغطي إطلاق مشروعك بالكامل. إذا كنت بحاجة إلى مزايا متقدمة إضافية، حددها ليتم تسعيرها لك بشكل مستقل:
+              </p>
+
+              <div class="addons-grid">
+                <label class="addon-label">
+                  <input type="checkbox" name="addons" value="ربط بوابة دفع إلكتروني (فيزا / محافظ)" />
+                  <span>ربط بوابة دفع إلكتروني</span>
+                </label>
+
+                <label class="addon-label">
+                  <input type="checkbox" name="addons" value="لوحة إدارة محتوى خاصة (CMS)" />
+                  <span>لوحة إدارة محتوى (CMS)</span>
+                </label>
+
+                <label class="addon-label">
+                  <input type="checkbox" name="addons" value="كتابة المحتوى التسويقي من الصفر" />
+                  <span>كتابة المحتوى التسويقي</span>
+                </label>
+
+                <label class="addon-label">
+                  <input type="checkbox" name="addons" value="إضافة لغة ثانية للموقع (English)" />
+                  <span>نسخة بلغة إضافية (EN)</span>
+                </label>
+
+                <label class="addon-label">
+                  <input type="checkbox" name="addons" value="إدخال منتجات أو صفحات إضافية فوق الحد الأساسي" />
+                  <span>صفحات / منتجات إضافية</span>
+                </label>
+
+                <label class="addon-label">
+                  <input type="checkbox" name="addons" value="حجز دومين واستضافة سنوية بإدارة كاملة" />
+                  <span>حجز الدومين والاستضافة</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- 5. ملاحظات وتفاصيل المشروع -->
+            <div class="form-group" style="margin-top: var(--space-lg);">
+              <label for="projectNotes" class="form-label">نبذة مختصرة عن نشاطك أو أي تفاصيل تود إضافتها</label>
+              <textarea
+                id="projectNotes"
+                name="projectNotes"
+                class="form-control"
+                placeholder="اذكر طبيعة خدماتك أو منتجاتك، أو أرفق رابط صفحتك على فيسبوك/إنستجرام إن وجد..."
+              ></textarea>
+            </div>
+
+            <!-- 6. الإقرار بنطاق العمل المحدد (Scope Guard Checkbox) -->
+            <label class="scope-agreement-box" for="scopeAgreed">
+              <input type="checkbox" id="scopeAgreed" name="scopeAgreed" required />
+              <span>
+                <strong>أقر باطلاعي على نطاق الباقة المختارة:</strong> أفهم أن سعر العرض (2,000 ج.م) يغطي النطاق الأساسي الموضح للباقة مع جولتين من التعديلات المجمعة، وأن أي متطلبات خارج النطاق الأساسي تُسعّر بشكل مستقل بالاتفاق.
+              </span>
+            </label>
+
+            <!-- زر الإرسال -->
+            <button type="submit" class="btn btn-whatsapp btn-block" style="padding-block: 1rem; font-size: 1.05rem;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+              </svg>
+              إرسال تفاصيل المشروع وتأكيد العرض عبر واتساب
+            </button>
+          </form>
+        </div>
+
+        <!-- القسم الأيسر: بطاقة ضمانات وحدود نطاق العمل (Sticky Scope Summary) -->
+        <aside class="scope-notice-card">
+          <div class="badge badge-launch" style="margin-bottom: var(--space-sm);">ضمان الشفافية من Aipudio</div>
+          <h3 style="margin-bottom: var(--space-xs);">كيف نحمي وقتك وميزانيتك؟</h3>
+          <p style="font-size: 0.925rem; margin-bottom: var(--space-lg);">
+            عرض الـ <strong>2,500 ج.م</strong> صُمم ليمنحك موقعاً احترافياً سريعاً بمواصفات مكتوبة وواضحة منذ اليوم الأول دون أي تكاليف مخفية:
+          </p>
+
+          <ul class="scope-list" style="margin-bottom: var(--space-lg);">
+            <li class="scope-item included">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span><strong>موقع تعريفي:</strong> حتى 5 صفحات بسيطة متجاوبة للموبايل + ربط واتساب ونموذج تواصل.</span>
+            </li>
+            <li class="scope-item included">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span><strong>متجر إلكتروني:</strong> حتى 5 صفحات أساسية + رفع حتى 10 منتجات عند التسليم + آلية طلب واضحة.</span>
+            </li>
+            <li class="scope-item included">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span><strong>صفحة حجز:</strong> صفحة متكاملة واحدة لعرض الخدمات أو المواعيد واستقبال طلبات الحجز.</span>
+            </li>
+            <li class="scope-item included">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span><strong>المراجعات:</strong> يشمل العرض جولتين (2 Rounds) من التعديلات المجمعة قبل التسليم النهائي.</span>
+            </li>
+          </ul>
+
+          <div style="padding-top: var(--space-md); border-top: 1px solid var(--border-color);">
+            <h4 style="font-size: 0.95rem; margin-bottom: var(--space-xs); color: var(--color-accent-amber);">
+              ⚠️ بنود غير مشمولة افتراضياً (تُسعّر كإضافات):
+            </h4>
+            <p style="font-size: 0.85rem; line-height: 1.6;">
+              لوحة التحكم الخاصة (CMS)، بوابات الدفع الإلكتروني البنكية، كتابة المحتوى التسويقي من الصفر، أو تعدد اللغات. يمكنك تحديد أي منها في النموذج لتسعيرها لك.
+            </p>
+          </div>
+
+          <div style="margin-top: var(--space-lg); padding-top: var(--space-md); border-top: 1px solid var(--border-color); text-align: center;">
+            <p style="font-size: 0.875rem; margin-bottom: var(--space-xs);">هل لديك استفسار سريع قبل ملء النموذج؟</p>
+            <a href="/pricing" class="btn btn-secondary btn-sm btn-block">مراجعة جدول المقارنة الكامل</a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand-logo">Aipudio<span>.</span></a>
+          <p>
+            شركة متخصصة في تطوير وتصميم المواقع التعريفية والمتاجر الإلكترونية وصفحات الحجز بمعايير سرعة وتجربة مستخدم قياسية.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-title">الحلول والباقات</h3>
+          <ul class="footer-links">
+            <li><a href="/services/business-website" class="footer-link">باقة الموقع التعريفي</a></li>
+            <li><a href="/services/ecommerce" class="footer-link">باقة المتجر الإلكتروني</a></li>
+            <li><a href="/services/booking" class="footer-link">باقة صفحة الحجز</a></li>
+            <li><a href="/pricing" class="footer-link">مقارنة الباقات والأسعار</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">روابط سريعة</h3>
+          <ul class="footer-links">
+            <li><a href="/portfolio" class="footer-link">معرض الأعمال</a></li>
+            <li><a href="/how-it-works" class="footer-link">طريقة العمل</a></li>
+            <li><a href="/about" class="footer-link">عن Aipudio</a></li>
+            <li><a href="/faq" class="footer-link">الأسئلة الشائعة</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">القانونية والتواصل</h3>
+          <ul class="footer-links">
+            <li><a href="/terms" class="footer-link">شروط الخدمة ونطاق العمل</a></li>
+            <li><a href="/privacy" class="footer-link">سياسة الخصوصية</a></li>
+            <li><a href="/contact" class="footer-link">تواصل معنا</a></li>
+            <li><a href="/start-project" class="footer-link" style="color: var(--color-accent-cyan); font-weight: 700;">ابدأ مشروعك (2,000 ج.م)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-current-year>2026</span> Aipudio Web Solutions. جميع الحقوق محفوظة.</p>
+        <p>صُمم وطُور بواسطة فريق Aipudio</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر الواتساب العائم للاستفسار السريع -->
+  <a
+    href="#"
+    class="floating-whatsapp"
+    data-whatsapp-quick
+    data-whatsapp-msg="مرحباً فريق Aipudio، أنا في صفحة (ابدأ مشروعك) ولدي استفسار سريع حول باقات عرض الـ 2,500 ج.م."
+    aria-label="تواصل معنا عبر واتساب"
+  >
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"/>
+    </svg>
+    <span>استفسار سريع</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="/js/main.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/forms.js"></script>
+  <script src="/js/analytics.js"></script>
+</body>
+</html>
