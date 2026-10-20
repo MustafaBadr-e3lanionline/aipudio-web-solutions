@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تواصل معنا | Aipudio Web Solutions</title>
+  <meta name="description" content="تواصل مع فريق Aipudio عبر النموذج أو واتساب المباشر لأي استفسار حول تصميم المواقع والمتاجر الإلكترونية." />
+  <link rel="canonical" href="https://aipudio.online/contact" />
+  <meta property="og:title" content="تواصل معنا — Aipudio" />
+  <meta property="og:description" content="نحن هنا للإجابة على استفساراتك وبدء مشروعك الرقمي." />
+  <meta property="og:url" content="https://aipudio.online/contact" />
+  <meta property="og:type" content="website" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" type="image/png" href="/assets/icons/icon-192.png" />
+  <link rel="stylesheet" href="/css/variables.css" />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/pages.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="/" class="brand-logo">Aipudio<span>.</span></a>
+      <nav class="site-nav" aria-label="التنقل الرئيسي">
+        <a href="/" class="nav-link">الرئيسية</a>
+        <a href="/services" class="nav-link">الخدمات</a>
+        <a href="/pricing" class="nav-link">الباقات والأسعار</a>
+        <a href="/portfolio" class="nav-link">أعمالنا</a>
+        <a href="/how-it-works" class="nav-link">طريقة العمل</a>
+        <a href="/faq" class="nav-link">الأسئلة الشائعة</a>
+        <a href="/contact" class="nav-link active" aria-current="page">تواصل معنا</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="/start-project" class="btn btn-primary btn-sm">ابدأ مشروعك</a>
+        <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false">
+          <svg width="26" height="26" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="مسار الصفحة">
+        <a href="/">الرئيسية</a>
+        <span>/</span>
+        <span>تواصل معنا</span>
+      </nav>
+      <div class="hero-badges-wrapper">
+        <span class="badge badge-launch">فريق الدعم والمبيعات جاهز للرد</span>
+      </div>
+      <h1 class="section-title">كيف يمكننا مساعدتك اليوم؟</h1>
+      <p class="section-subtitle" style="max-width: 680px; margin-inline: auto;">
+        تواصل معنا عبر النموذج أدناه أو مباشرة عبر واتساب وسنجيبك في أسرع وقت.
+      </p>
+    </div>
+  </section>
+
+  <main class="section">
+    <div class="container">
+      <div class="start-project-layout" style="max-width: 860px; margin-inline: auto; grid-template-columns: 1.5fr 1fr;">
+        <!-- نموذج التواصل العام (يتوافق مع js/forms.js) -->
+        <div class="form-card">
+          <h2 style="font-size: 1.35rem; margin-bottom: 1.25rem;">أرسل لنا رسالة مباشرة</h2>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">الاسم الكامل <span style="color: #ef4444;">*</span></label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="مثال: أحمد محمود" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">رقم الموبايل / واتساب <span style="color: #ef4444;">*</span></label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="01012345678" dir="ltr" style="text-align: right;" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">موضوع الاستفسار</label>
+              <input type="text" id="subject" name="subject" class="form-control" placeholder="استفسار حول باقات الـ 2,500 ج.م" />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">نص الرسالة <span style="color: #ef4444;">*</span></label>
+              <textarea id="message" name="message" class="form-control" placeholder="اكتب تفاصيل استفسارك هنا..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">إرسال الرسالة عبر واتساب</button>
+          </form>
+        </div>
+
+        <!-- معلومات التواصل السريع -->
+        <aside class="scope-notice-card" style="display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="margin-bottom: var(--space-sm);">تواصل فوري وسريع</h3>
+          <p style="font-size: 0.9rem; margin-bottom: var(--space-lg);">
+            تفضل بالتواصل معنا مباشرة عبر واتساب للحصول على استجابة فورية من فريق المبيعات.
+          </p>
+          <a href="#" class="btn btn-whatsapp btn-block" data-whatsapp-quick data-whatsapp-msg="مرحباً فريق Aipudio، لدي استفسار عام وأرغب بالتواصل معكم.">
+            محادثة واتساب مباشرة
+          </a>
+          <div style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid var(--border-color); font-size: 0.9rem; color: var(--color-text-muted);">
+            <p><strong>ساعات العمل:</strong></p>
+            <p>السبت - الخميس: 9 صباحاً - 9 مساءً</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand-logo">Aipudio<span>.</span></a>
+          <p>شركة متخصصة في تطوير وتصميم المواقع التعريفية والمتاجر الإلكترونية وصفحات الحجز بمعايير سرعة وتجربة مستخدم قياسية.</p>
+        </div>
+        <div>
+          <h3 class="footer-title">الحلول والباقات</h3>
+          <ul class="footer-links">
+            <li><a href="/services/business-website" class="footer-link">باقة الموقع التعريفي</a></li>
+            <li><a href="/services/ecommerce" class="footer-link">باقة المتجر الإلكتروني</a></li>
+            <li><a href="/services/booking" class="footer-link">باقة صفحة الحجز</a></li>
+            <li><a href="/pricing" class="footer-link">مقارنة الباقات والأسعار</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">روابط سريعة</h3>
+          <ul class="footer-links">
+            <li><a href="/portfolio" class="footer-link">معرض الأعمال</a></li>
+            <li><a href="/how-it-works" class="footer-link">طريقة العمل</a></li>
+            <li><a href="/about" class="footer-link">عن Aipudio</a></li>
+            <li><a href="/faq" class="footer-link">الأسئلة الشائعة</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">القانونية والتواصل</h3>
+          <ul class="footer-links">
+            <li><a href="/terms" class="footer-link">شروط الخدمة ونطاق العمل</a></li>
+            <li><a href="/privacy" class="footer-link">سياسة الخصوصية</a></li>
+            <li><a href="/contact" class="footer-link">تواصل معنا</a></li>
+            <li><a href="/start-project" class="footer-link" style="color: var(--color-accent-cyan); font-weight: 700;">ابدأ مشروعك (2,500 ج.م)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-current-year>2026</span> Aipudio Web Solutions. جميع الحقوق محفوظة.</p>
+        <p>صُمم وطُور بواسطة فريق Aipudio</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="floating-whatsapp" data-whatsapp-quick data-whatsapp-msg="مرحباً فريق Aipudio، أرغب في الاستفسار من صفحة اتصل بنا." aria-label="تواصل معنا عبر واتساب">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"/></svg>
+    <span>استفسار سريع</span>
+  </a>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/analytics.js"></script>
+</body>
+</html>
